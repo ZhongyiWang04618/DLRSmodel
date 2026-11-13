@@ -1,0 +1,35 @@
+# PyRadiomics v3.x DEFAULT PARAMETERS (no user customization)
+imageType:
+  Original: {}
+# 默认不启用 LoG, Wavelet, Square, SquareRoot, Logarithm, Exponential
+
+featureClass:
+# empty list = enable ALL features within each class
+  firstorder: []
+  glcm: []
+  gldm: []
+  glrlm: []
+  glszm: []
+  ngtdm: []
+  shape: []
+
+setting:
+  binWidth: 25
+  resampledPixelSpacing: null          
+  interpolator: 'sitkBSpline'          
+  padDistance: 5
+  label: 1
+  force2D: false
+  force2Ddimension: 0
+  distances: [1]
+  symmetricalGLCM: true
+  gldm_a: 0
+  normalize: false
+  voxelArrayShift: 0
+  correctMask: true
+  maskedKernel: true
+  initValue: 0
+  minimumROISize: null
+  additionalInfo: true
+  verbose: true
+  voxelBatch: -1
